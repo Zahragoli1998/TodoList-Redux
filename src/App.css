@@ -1,0 +1,162 @@
+
+.App{
+  background: url(./img/R.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  color: white;
+}
+
+.container{
+  
+  width:50vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+.container .body{
+  background-color: #81a1e6a6;
+  background-color: rgba(59, 124, 221, 0.856);
+  width: 25vw;
+  height: 90vh;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+
+}
+.container .body input{
+  width: 75%;
+  height: 3vw;
+  border-radius: 0.5em;
+  outline: none;
+  border: 2px solid rgb(65, 64, 64);
+  opacity: 0.7;
+  cursor: pointer;
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+}
+.inputbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 10%;
+  margin-top: 0%;
+  gap: 10px;
+}
+.inputbox button{
+  background-color: #81a1e600;
+  border: none;
+  width: 4vw;
+  height: 4vw;
+}
+.addIcon{
+  border-radius: 50%;
+  width: 3vw;
+  height: 3vw;
+  cursor: pointer;
+  transition: 0.5s;
+  box-shadow: 0px 0px 10px black;
+}
+.addIcon:hover{
+  width: 3.5vw;
+  height:3.5vw ;
+  background-color: rgba(210, 210, 211, 0.397);
+}
+.listBox{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  margin-top: 10%;
+  overflow-y: auto;
+}
+.listBox::-webkit-scrollbar{
+  width: 7px;
+  border-radius: 5px;
+  background-color: rgb(187, 187, 187);
+  
+}
+.listBox::-webkit-scrollbar-thumb{
+  background-color: rgb(125, 129, 168);
+  border-radius: 1rem;
+  cursor:pointer;
+}
+.listBox::-webkit-scrollbar-thumb:hover{
+  background-color: rgb(74, 74, 167);
+}
+.listItems{
+  width: 90%;
+  height: 3vw;
+  display: flex;
+  align-items: center;
+  background-color: aliceblue;
+  box-shadow: 5px 5px 10px black;
+  border-radius: 1rem;
+  margin: 3% 0;
+  transition: 0.5s;
+  transform: translateX(0);
+  animation: 1s addItem;
+}
+@keyframes addItem {
+  0% {transform: translateX(-500px);}
+  100% {transform: translateX(0px);}
+}
+.itemIsDone{
+  width: 90%;
+  height: 3vw;
+  display: flex;
+  align-items: center;
+  background-color: aliceblue;
+  box-shadow: 5px 5px 10px black;
+  border-radius: 1rem;
+  margin: 3% 0;
+  background-color: rgba(0, 128, 0, 0.836);
+
+}
+.item{
+  width: 100%;
+  height: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 5%;
+  border-radius: 1rem;
+}
+.bottonBox{
+  display: flex;
+  gap: 10px;
+}
+.bottonBox img{
+  width: 1.5vw;
+  height: 1.5vw;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.5s;
+  padding: 2%;
+}
+.checkIcon:hover{
+  background-color: rgba(0, 128, 0, 0.3);
+}
+.deleteIcon:hover{
+  background-color: rgba(255, 0, 0, 0.2);
+}
+.editIcon:hover{
+  background-color: rgba(128, 128, 128, 0.4);
+}
+.done{
+  text-decoration: 3px black line-through;
+}
+h1{
+  font-size: 3vw;
+  font-family: 'Pangolin', cursive;
+}
